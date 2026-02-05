@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEIS 2K26 | Celestial Mystery</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="bg-image"></div>
+  <canvas id="starfield"></canvas>
+  <div id="nebula"></div>
+  <div class="vignette"></div>
+
+  <div id="app">
+    <nav class="glass-nav">
+      <div class="logo">AIESEC CARTHAGE</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#navigators">Navigators</a></li>
+        <li><a href="#architects">Architects</a></li>
+        <li><a href="#register" class="cta-nav">Register</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home" class="page active"></section>
+      <section id="about" class="page"></section>
+      <section id="navigators" class="page"></section>
+      <section id="architects" class="page"></section>
+      <section id="register" class="page"></section>
+    </main>
+
+    <button id="back-to-top" class="shooting-star">
+      <span class="star-icon">☄️</span>
+    </button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
