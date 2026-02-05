@@ -15,5 +15,5 @@ export const CONFIG = {
         architects: 'radial-gradient(circle at 20% 80%, rgba(255, 204, 0, 0.05), transparent)',
         register: 'radial-gradient(circle at 80% 20%, rgba(255, 204, 0, 0.1), transparent)'
     },
-    googleSheetsUrl: 'https://script.google.com/macros/s/AKfycbxDORytuBPfno6tlmT5Unb2pwiXb1o-2yz2_iT1vmtEVeQ-vTSTLesYNsk7Z8L6Bm0QlQ/exec'
+    googleSheetsUrl: import.meta.env.VITE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxDORytuBPfno6tlmT5Unb2pwiXb1o-2yz2_iT1vmtEVeQ-vTSTLesYNsk7Z8L6Bm0QlQ/exec'
 };
