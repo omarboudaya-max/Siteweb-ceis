@@ -888,7 +888,7 @@ body {
     flex-wrap: wrap;
   }
 
-  .cta-nav {
+  .nav-links .cta-nav {
     display: none;
     /* Hide CTA in header on mobile */
   }

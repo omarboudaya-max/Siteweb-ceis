@@ -907,6 +907,9 @@ window.selectChoice = function (btn, id, value, price = 0) {
     input.value = value;
     input.dataset.price = price; // Store price data
     input.dispatchEvent(new Event('input')); // Trigger validation
+
+    // Store price persistently in registrationData
+    registrationData[id + '-price'] = price;
   }
 
   // Handle Dynamic Fee
@@ -915,8 +918,11 @@ window.selectChoice = function (btn, id, value, price = 0) {
 
 function updateTotalFee() {
   const baseFee = 145;
-  const busPrice = parseInt(document.getElementById('reg-bus')?.dataset.price || 0);
-  const roomPrice = parseInt(document.getElementById('reg-room')?.dataset.price || 0);
+
+  // Read from persistent data store, falling back to 0 if not set
+  const busPrice = parseInt(registrationData['reg-bus-price'] || 0);
+  const roomPrice = parseInt(registrationData['reg-room-price'] || 0);
+
   const total = baseFee + busPrice + roomPrice;
 
   const feeDisplays = document.querySelectorAll('#total-fee');
