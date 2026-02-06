@@ -632,8 +632,8 @@ const formSteps = [
              <p>I agree to pay an additional <strong>100 dinars</strong> (50 dinars per day) if I choose a single room upgrade.</p>
           </div>
             <div class="terms-item" style="display: flex; gap: 1rem; align-items: start; margin-bottom: 1rem;">
-              <span style="color: var(--gold-supernova); font-size: 1.2rem;">★</span>
-              <p>Cancellation Fees apply (bus cancellation are included) according to the time of request.</p>
+              <span style="color: var(--gold-supernova); font-size: 1.2rem;">❌</span>
+              <p>I accept the 100% cancellation fee if I cancel my registration (accomodation and bus fees included)</p>
             </div>
           <div class="terms-item" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
              <span style="font-size: 1.2rem;">📋</span>
