@@ -79,10 +79,6 @@ function initParallax() {
 
 // --- Navigation Logic ---
 function navigateTo(pageId) {
-  pageId = 'closed'; // Force everything to redirected to closed
-  const nav = document.querySelector('.glass-nav');
-  if (nav) nav.style.display = 'none';
-
   const pages = document.querySelectorAll('.page');
   const targetPage = document.getElementById(pageId);
   const nebula = document.getElementById('nebula');
@@ -382,23 +378,7 @@ const SECTIONS = {
       Your celestial journey begins here. Join us at CEIS 2K26 and become part of a brighter constellation.
     </p>
   </div>
-`,
-  closed: `
-    <div class="hero" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem;">
-      <div class="title-container" style="margin-bottom: 2rem;">
-        <div class="nebula-starlines">
-          <div class="starline s1"></div>
-          <div class="starline s2"></div>
-          <div class="starline s3"></div>
-        </div>
-        <h1 class="orbitron celestial-title" style="font-size: clamp(2rem, 8vw, 4rem);">REGISTRATION CLOSED</h1>
-      </div>
-      <p style="font-size: 1.5rem; opacity: 0.9; max-width: 800px; line-height: 1.6; color: #fff; text-shadow: 0 0 20px rgba(255,255,255,0.3);">
-        The stars have aligned, and our celestial journey is full.<br><br>
-        Thank you for your interest in <span class="text-gradient-gold" style="font-weight: 800;">CEIS 2K26</span>. We look forward to seeing you at the next event! ✨
-      </p>
-    </div>
-  `
+`
 };
 
 // --- Multi-Step Form Logic ---
@@ -1440,7 +1420,7 @@ function init() {
   initParallax();
   initForm();
 
-  navigateTo('closed');
+  navigateTo('home');
 }
 
 window.addEventListener('resize', initStarfield);
