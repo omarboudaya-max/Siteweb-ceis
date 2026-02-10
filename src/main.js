@@ -334,9 +334,14 @@ const SECTIONS = {
     </div>
   `,
   register: `
-  <div class="registration-launchpad glass-card" style = "max-width: 850px; margin: 0 auto;">
-      <h2 class="orbitron text-gradient-gold" style="margin-bottom: 0.5rem; text-align: center; font-size: 2.5rem;">Registration Launchpad</h2>
-      <p style="margin-bottom: 3rem; opacity: 0.9; text-align: center; font-style: italic; font-size: 1.1rem;">"Tell me your sign, I'll tell you your superpower"</p>
+  <div class="registration-launchpad glass-card" style="max-width: 850px; margin: 0 auto; padding: 4rem 2rem;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <div style="font-size: 5rem; margin-bottom: 1rem;">🔒</div>
+        <h2 class="orbitron text-gradient-gold" style="margin-bottom: 1rem; font-size: 3rem;">Registration Closed</h2>
+        <p style="opacity: 0.9; font-size: 1.2rem; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+          Thank you for your interest in CEIS 2K26. Registration has now closed as we prepare for an unforgettable celestial journey.
+        </p>
+      </div>
       
       <div class="conference-details" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; justify-content: center;">
         <div class="detail-box glass-card" style="padding: 1.5rem; text-align: center;">
@@ -353,29 +358,18 @@ const SECTIONS = {
         </div>
       </div>
 
-      <div class="form-steps">
-         <div id="step-indicator" style="display: flex; gap: 1rem; margin-bottom: 3rem; justify-content: center; flex-wrap: wrap;">
-            <div class="step active"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-          </div>
-         <form id="reg-form">
-            <div id="form-content" style="min-height: 300px;"></div>
-            <div class="form-nav" style="margin-top: 3rem; display: flex; justify-content: space-between;">
-               <button type="button" id="prev-btn" class="glass-btn" style="display:none;">Back</button>
-               <button type="button" id="next-btn" class="cta-nav" style="min-width: 180px;">Continue</button>
-            </div>
-         </form>
+      <div style="text-align: center; padding: 2rem; background: rgba(255, 204, 0, 0.05); border-radius: 12px; border: 1px solid rgba(255, 204, 0, 0.2);">
+        <p style="font-size: 1.1rem; opacity: 0.9; line-height: 1.8;">
+          <strong style="color: var(--gold-supernova);">See you under the stars! ✨</strong><br>
+          We look forward to welcoming all registered delegates for an incredible experience.
+        </p>
       </div>
     </div>
 
   <div style="text-align: center; margin-top: 6rem; padding-bottom: 4rem;">
-    <h3 class="orbitron text-gradient-gold" style="font-size: 2.2rem;">Ready to Illuminate Your Path?</h3>
+    <h3 class="orbitron text-gradient-gold" style="font-size: 2.2rem;">The Journey Awaits</h3>
     <p style="opacity: 0.8; margin-top: 1.5rem; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-      Your celestial journey begins here. Join us at CEIS 2K26 and become part of a brighter constellation.
+      For registered delegates, your celestial journey is about to begin. Get ready for CEIS 2K26!
     </p>
   </div>
 `
